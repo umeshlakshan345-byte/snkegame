@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNAKE // ARCADE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scanlines"></div>
+
+  <div class="wrapper">
+    <header>
+      <div class="title-block">
+        <span class="label">SYS://GAME</span>
+        <h1>SNAKE</h1>
+      </div>
+      <div class="hud">
+        <div class="hud-item">
+          <span class="hud-label">SCORE</span>
+          <span class="hud-value" id="score">000</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">LEVEL</span>
+          <span class="hud-value" id="level">01</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">SPEED</span>
+          <span class="hud-value" id="speed">LOW</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="canvas-container">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+      <!-- Play overlay -->
+      <div class="overlay" id="overlay">
+        <div class="overlay-content">
+          <div class="pixel-snake">🐍</div>
+          <p class="overlay-sub">READY PLAYER ONE</p>
+          <button id="playBtn">▶ PLAY</button>
+          <p class="controls-hint">USE ← ↑ → ↓ ARROW KEYS</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span>© ARCADE SYS v2.4 &nbsp;|&nbsp; ARROW KEYS TO MOVE</span>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
